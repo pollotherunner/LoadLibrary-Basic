@@ -29,7 +29,7 @@ DWORD findPidByName(const wchar_t* name)
 int main()
 {
 
-	DWORD pid = findPidByName(L"opera.exe");
+	DWORD pid = findPidByName(L"processo_alvo.exe");
 	HANDLE hProcess = OpenProcess(PROCESS_ALL_ACCESS, FALSE, pid);
 
 	if (hProcess == INVALID_HANDLE_VALUE)
